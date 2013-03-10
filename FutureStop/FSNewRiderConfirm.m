@@ -23,20 +23,20 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor clearColor];
         
         //	// Do any additional setup after loading the view, typically from a nib.
-        CGRect alertFrame = CGRectMake(0.f, 0.f, 255.f, 139.f);
-        self.alertView = [[FSNewRiderAlertView alloc] initWithFrame:alertFrame];
-        self.alertView.delegate = self;
-        
-        self.gradient = [[FSAlertViewGradient alloc] initWithFrame:self.bounds];
-        //
-        [self addSubview:self.gradient];
-        [self addSubview:self.alertView];
-        
-        self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        self.gradient.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//        CGRect alertFrame = CGRectMake(0.f, 0.f, 255.f, 139.f);
+//        self.alertView = [[FSNewRiderAlertView alloc] initWithFrame:alertFrame];
+//        self.alertView.delegate = self;
+//        
+//        self.gradient = [[FSAlertViewGradient alloc] initWithFrame:self.bounds];
+//        //
+//        [self addSubview:self.gradient];
+//        [self addSubview:self.alertView];
+//        
+//        self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//        self.gradient.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
     }
     return self;

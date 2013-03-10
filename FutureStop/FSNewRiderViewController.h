@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UIView *rate;
 @property (weak, nonatomic) IBOutlet UIView *time;
 
+- (IBAction)yesTapped:(UIButton *)sender;
 @end
