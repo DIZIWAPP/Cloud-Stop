@@ -39,4 +39,17 @@ NSString * const kFSBaseURL = @"http://something.mutualmobile.com";
     return self;
 }
 
+- (void)fetchPersonInfoWithUniqueId:(NSString *)uniqueId
+					   successBlock:(void (^)(FSPerson *))successBlock
+					   failureBlock:(FSFailureBlock)failureBlock {
+	
+}
+
+- (void)createPersonWithUniqueId:(NSString *)uniqueId
+					successBlock:(void (^)(FSPerson *))successBlock
+					failureBlock:(FSFailureBlock)failureBlock {
+	
+
+}
+
 @end

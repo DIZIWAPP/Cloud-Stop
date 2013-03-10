@@ -12,7 +12,7 @@
 @interface FSPerson : NSObject
 
 @property (nonatomic, strong) NSString *uniqueId;
-@property (nonatomic, strong) FSElection *eleciton;
+@property (nonatomic, strong) FSElection *election;
 @property (nonatomic, strong) FSVehicle *vehicle;
 
 @end
