@@ -1,0 +1,7 @@
+{
+    "Person": {
+        "uniqueId" : "1"
+        "isBoarded" : "false"
+        "isLoser" : "false"
+    }
+}
