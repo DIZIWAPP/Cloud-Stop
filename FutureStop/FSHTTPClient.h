@@ -24,6 +24,4 @@ typedef void (^FSFailureBlock)(NSError *error);
 					successBlock:(void (^)(FSPerson *))successBlock
 					failureBlock:(FSFailureBlock)failureBlock;
 
-
-
 @end

@@ -6,7 +6,10 @@
 //  Copyright (c) 2013 Mutual Mobile SXSW Creatathon. All rights reserved.
 //
 
+#define FAKE_ASS_JSON 0
+
 #import "FSHTTPClient.h"
+#import "NSString+jsonParsing.h"
 
 NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
 
@@ -77,18 +80,42 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
 - (void)fetchPersonInfoWithUniqueId:(NSString *)uniqueId
 					   successBlock:(void (^)(FSPerson *))successBlock
 					   failureBlock:(FSFailureBlock)failureBlock {
+    
+#ifdef FAKE_ASS_JSON
+    
+    int64_t delayInSeconds = 1.0;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC), dispatch_get_current_queue(), ^{
+        NSDictionary *fakeAssJSON = [self getFakeAssJSONForFile:@"personGet"];
+        FSPerson *person = [FSPerson personFromServerResponse:fakeAssJSON];
+        successBlock(person);
+    });
+    
+#else
 	
 	NSString *path = [@"person" stringByAppendingPathComponent:uniqueId];
 	
 	[self sendGETToPath:path
 		   successBlock:successBlock
 		   failureBlock:failureBlock];
+    
+#endif
 }
 
 - (void)createPersonWithUniqueId:(NSString *)uniqueId
 					etaInSeconds:(NSNumber *)etaInSeconds
 					successBlock:(void (^)(FSPerson *))successBlock
 					failureBlock:(FSFailureBlock)failureBlock {
+    
+#ifdef FAKE_ASS_JSON
+    
+    int64_t delayInSeconds = 1.0;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC), dispatch_get_current_queue(), ^{
+        NSDictionary *fakeAssJSON = [self getFakeAssJSONForFile:@"personPost"];
+        FSPerson *person = [FSPerson personFromServerResponse:fakeAssJSON];
+        successBlock(person);
+    });
+    
+#else
 	
 	NSString *path = [@"person" stringByAppendingPathComponent:uniqueId];
 	NSDictionary *body = @{@"eta" : etaInSeconds};
@@ -97,6 +124,17 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
 				withBody:body
 			successBlock:successBlock
 			failureBlock:failureBlock];
+
+#endif
+}
+
+- (NSDictionary*)getFakeAssJSONForFile:(NSString*)file {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:file ofType:@"json"];
+    NSString *jsonString = [NSString stringWithContentsOfFile:filePath
+                                                encoding:NSUTF8StringEncoding
+                                                   error:nil];
+    NSDictionary *mockResponse = [jsonString dictionaryParsedAsJson];
+    return mockResponse;
 }
 
 @end

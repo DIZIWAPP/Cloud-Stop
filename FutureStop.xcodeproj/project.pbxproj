@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		426C62F116EC1E9900FD1B55 /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 426C62EE16EC1E9900FD1B55 /* NSArray+JSONString.m */; };
 		426C62F216EC1E9900FD1B55 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 426C62F016EC1E9900FD1B55 /* NSDictionary+JSONString.m */; };
+		428A0D9E16EC418F0084F4C9 /* NSString+jsonParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A0D9D16EC418F0084F4C9 /* NSString+jsonParsing.m */; };
 		42C346C816EC319200DA86D6 /* personPost.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C346C716EC319200DA86D6 /* personPost.json */; };
 		42C346CB16EC33A200DA86D6 /* personGet.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C346CA16EC33A200DA86D6 /* personGet.json */; };
 		42C346CF16EC356800DA86D6 /* personGetElection.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C346CE16EC356800DA86D6 /* personGetElection.json */; };
@@ -72,6 +73,8 @@
 		426C62EE16EC1E9900FD1B55 /* NSArray+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONString.m"; sourceTree = "<group>"; };
 		426C62EF16EC1E9900FD1B55 /* NSDictionary+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONString.h"; sourceTree = "<group>"; };
 		426C62F016EC1E9900FD1B55 /* NSDictionary+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONString.m"; sourceTree = "<group>"; };
+		428A0D9C16EC418E0084F4C9 /* NSString+jsonParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+jsonParsing.h"; sourceTree = "<group>"; };
+		428A0D9D16EC418F0084F4C9 /* NSString+jsonParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+jsonParsing.m"; sourceTree = "<group>"; };
 		42C346C716EC319200DA86D6 /* personPost.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personPost.json; sourceTree = "<group>"; };
 		42C346CA16EC33A200DA86D6 /* personGet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personGet.json; sourceTree = "<group>"; };
 		42C346CE16EC356800DA86D6 /* personGetElection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personGetElection.json; sourceTree = "<group>"; };
@@ -292,6 +295,8 @@
 				426C62EE16EC1E9900FD1B55 /* NSArray+JSONString.m */,
 				426C62EF16EC1E9900FD1B55 /* NSDictionary+JSONString.h */,
 				426C62F016EC1E9900FD1B55 /* NSDictionary+JSONString.m */,
+				428A0D9C16EC418E0084F4C9 /* NSString+jsonParsing.h */,
+				428A0D9D16EC418F0084F4C9 /* NSString+jsonParsing.m */,
 				C6C0D03416EBFE2D00165C0C /* FSHTTPClient.h */,
 				C6C0D03516EBFE2D00165C0C /* FSHTTPClient.m */,
 			);
@@ -455,6 +460,7 @@
 				C6912CB516EC12DC0047CBA9 /* FSVehicle.m in Sources */,
 				426C62F116EC1E9900FD1B55 /* NSArray+JSONString.m in Sources */,
 				426C62F216EC1E9900FD1B55 /* NSDictionary+JSONString.m in Sources */,
+				428A0D9E16EC418F0084F4C9 /* NSString+jsonParsing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

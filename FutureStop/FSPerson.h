@@ -16,4 +16,6 @@
 @property (nonatomic, assign) BOOL isBoarded;
 @property (nonatomic, assign) BOOL isLoser;
 
++ (FSPerson *)personFromServerResponse:(NSDictionary *)serverResponse;
+
 @end

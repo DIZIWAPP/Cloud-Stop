@@ -10,4 +10,24 @@
 
 @implementation FSElection
 
++ (instancetype)electionFromServerResponse:(NSDictionary *)serverResponse {
+    
+    if (serverResponse == nil) {
+        return nil;
+    }
+    
+    FSElection *election = [[FSElection alloc] init];
+    
+    id result = serverResponse[@"result"];
+    if (result == [NSNull null]) {
+        election.result = FSElectionStatusNone;
+    } else if ([result boolValue] == YES) {
+        election.result = FSElectionStatusPassed;
+    } else {
+        election.result = FSElectionStatusFailed;
+    }
+    
+    return election;
+}
+
 @end
