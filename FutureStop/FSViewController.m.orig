@@ -18,14 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+<<<<<<< HEAD
     self.addRiderConfirmView = [[FSNewRiderConfirm alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.addRiderConfirmView];
+=======
     [self configureETALabel];
     [self configureETAValueLabel];
     [self configureCostLabel];
     [self configureCostValueLabel];
     [self configureDestinationLabel];
     [self configureDestinationValueLabel];
-    [self.view addSubview:self.addRiderConfirmView];
 }
 
 #pragma mark - Styles
@@ -66,6 +68,7 @@
 
 - (void)setDestination:(NSString*)destination {
     self.destinationLabel.text = destination;
+>>>>>>> master
 }
 
 @end

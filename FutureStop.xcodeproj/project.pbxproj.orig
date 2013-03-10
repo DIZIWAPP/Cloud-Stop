@@ -62,12 +62,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		46A06C9116EC0ACC009EDE33 /* FSNewRiderAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderAlertView.h; sourceTree = "<group>"; };
 		46A06C9216EC0ACC009EDE33 /* FSNewRiderAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderAlertView.m; sourceTree = "<group>"; };
 		46A06C9416EC125D009EDE33 /* FSAlertViewGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAlertViewGradient.h; sourceTree = "<group>"; };
 		46A06C9516EC125D009EDE33 /* FSAlertViewGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAlertViewGradient.m; sourceTree = "<group>"; };
 		46A06C9716EC1BD8009EDE33 /* FSNewRiderConfirm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderConfirm.h; sourceTree = "<group>"; };
 		46A06C9816EC1BD8009EDE33 /* FSNewRiderConfirm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderConfirm.m; sourceTree = "<group>"; };
+=======
+		38C5F0A016EC224000AE80CC /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+>>>>>>> master
 		6A38BEC6B0474D809A7DC9DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		885DF4FD16EB14E600A25348 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
 		885DF4FF16EB14F100A25348 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
