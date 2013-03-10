@@ -16,4 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *destinationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *destinationValueLabel;
 
+- (void)setETA:(NSString*)eta;
+- (void)setCost:(NSString*)cost;
+- (void)setDestination:(NSString*)destination;
+
 @end
