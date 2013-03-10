@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FSNewRiderAlertView.h"
 
-@interface FSNewRiderConfirm : UIView
+@protocol FSNewRiderConfirmDelegate;
 
+@interface FSNewRiderConfirm : UIView <FSNewRiderAlertViewDelegate>
+
+@property (nonatomic, weak) id<FSNewRiderConfirmDelegate> delegate;
+
+@end
+
+@protocol FSNewRiderConfirmDelegate <NSObject>
+
+@required
+- (void)approvedNewRider:(FSNewRiderConfirm *)alertView;
+- (void)rejectedNewRider:(FSNewRiderConfirm *)alertView;
 @end

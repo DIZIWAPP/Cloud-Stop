@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FSNewRiderConfirm.h"
 
-@interface FSViewController : UIViewController
+@interface FSViewController : UIViewController <FSNewRiderConfirmDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *etaLabel;
 @property (weak, nonatomic) IBOutlet UILabel *etaValueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *costLabel;

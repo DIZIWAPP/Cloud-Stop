@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol FSNewRiderAlertViewDelegate;
+
 @interface FSNewRiderAlertView : UIView
+
+@property (nonatomic, weak) id<FSNewRiderAlertViewDelegate> delegate;
+
+@end
+
+@protocol FSNewRiderAlertViewDelegate <NSObject>
+
+@required
+- (void)alertViewDidApproveNewRider:(FSNewRiderAlertView *)alertView;
+- (void)alertViewDidRejectNewRider:(FSNewRiderAlertView *)alertView;
 
 @end

@@ -18,13 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.addRiderConfirmView = [[FSNewRiderConfirm alloc] initWithFrame:self.view.bounds];
     [self configureETALabel];
     [self configureETAValueLabel];
     [self configureCostLabel];
     [self configureCostValueLabel];
     [self configureDestinationLabel];
     [self configureDestinationValueLabel];
+    
+    self.addRiderConfirmView = [[FSNewRiderConfirm alloc] initWithFrame:self.view.bounds];
+    self.addRiderConfirmView.delegate = self;
     [self.view addSubview:self.addRiderConfirmView];
 }
 
@@ -66,6 +68,14 @@
 
 - (void)setDestination:(NSString*)destination {
     self.destinationLabel.text = destination;
+}
+
+- (void)approvedNewRider:(FSNewRiderConfirm *)alertView{
+    
+}
+
+- (void)rejectedNewRider:(FSNewRiderConfirm *)alertView{
+    
 }
 
 @end
