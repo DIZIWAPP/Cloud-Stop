@@ -54,5 +54,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DIN-Light</string>
+		<string>DIN-Regular</string>
+	</array>
 </dict>
 </plist>

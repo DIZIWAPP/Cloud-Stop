@@ -7,23 +7,83 @@
 //
 
 #import "FSViewController.h"
+#import "FSNewRiderConfirm.h"
+#import "FSNewRiderViewController.h"
 
 @interface FSViewController ()
-
+@property (nonatomic, strong) FSNewRiderConfirm *addRiderConfirmView;
 @end
 
 @implementation FSViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self configureETALabel];
+    [self configureETAValueLabel];
+    [self configureCostLabel];
+    [self configureCostValueLabel];
+    [self configureDestinationLabel];
+    [self configureDestinationValueLabel];
+    
+    self.addRiderConfirmView = [[FSNewRiderConfirm alloc] initWithFrame:self.view.bounds];
+    self.addRiderConfirmView.delegate = self;
+    [self.view addSubview:self.addRiderConfirmView];
+    
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        FSNewRiderViewController *vc = [[FSNewRiderViewController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    });
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Styles
+
+- (void)configureETALabel {
+    
+}
+
+- (void)configureETAValueLabel {
+    
+}
+
+- (void)configureCostLabel {
+    
+}
+
+- (void)configureCostValueLabel {
+    
+}
+
+- (void)configureDestinationLabel {
+    
+}
+
+- (void)configureDestinationValueLabel {
+    
+}
+
+#pragma mark - Accessors 
+
+- (void)setETA:(NSString*)eta {
+    self.etaLabel.text = eta;
+}
+
+- (void)setCost:(NSString*)cost {
+    self.costLabel.text = cost;
+}
+
+- (void)setDestination:(NSString*)destination {
+    self.destinationLabel.text = destination;
+}
+
+- (void)approvedNewRider:(FSNewRiderConfirm *)alertView{
+    
+}
+
+- (void)rejectedNewRider:(FSNewRiderConfirm *)alertView{
+    
 }
 
 @end
