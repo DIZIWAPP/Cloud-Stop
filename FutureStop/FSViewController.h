@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface FSViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *etaLabel;
+@property (weak, nonatomic) IBOutlet UILabel *etaValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *costLabel;
+@property (weak, nonatomic) IBOutlet UILabel *costValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *destinationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *destinationValueLabel;
 
 @end
