@@ -19,13 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self configureETALabel];
-    [self configureETAValueLabel];
-    [self configureCostLabel];
-    [self configureCostValueLabel];
-    [self configureDestinationLabel];
-    [self configureDestinationValueLabel];
-    
     self.addRiderConfirmView = [[FSNewRiderConfirm alloc] initWithFrame:self.view.bounds];
     self.addRiderConfirmView.delegate = self;
     [self.view addSubview:self.addRiderConfirmView];
@@ -36,32 +29,6 @@
         FSNewRiderViewController *vc = [[FSNewRiderViewController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     });
-}
-
-#pragma mark - Styles
-
-- (void)configureETALabel {
-    
-}
-
-- (void)configureETAValueLabel {
-    
-}
-
-- (void)configureCostLabel {
-    
-}
-
-- (void)configureCostValueLabel {
-    
-}
-
-- (void)configureDestinationLabel {
-    
-}
-
-- (void)configureDestinationValueLabel {
-    
 }
 
 #pragma mark - Accessors 
