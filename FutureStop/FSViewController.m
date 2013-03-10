@@ -8,6 +8,7 @@
 
 #import "FSViewController.h"
 #import "FSNewRiderConfirm.h"
+#import "FSNewRiderViewController.h"
 
 @interface FSViewController ()
 @property (nonatomic, strong) FSNewRiderConfirm *addRiderConfirmView;
@@ -28,6 +29,13 @@
     self.addRiderConfirmView = [[FSNewRiderConfirm alloc] initWithFrame:self.view.bounds];
     self.addRiderConfirmView.delegate = self;
     [self.view addSubview:self.addRiderConfirmView];
+    
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        FSNewRiderViewController *vc = [[FSNewRiderViewController alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+    });
 }
 
 #pragma mark - Styles

@@ -27,6 +27,10 @@
 		46A06CB416EC2710009EDE33 /* yes-tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CB216EC2710009EDE33 /* yes-tile@2x.png */; };
 		46A06CC116EC2B6D009EDE33 /* DIN-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CC016EC2B6D009EDE33 /* DIN-Light.otf */; };
 		46A06CC316EC2B74009EDE33 /* DIN-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CC216EC2B74009EDE33 /* DIN-Regular.otf */; };
+		46A06CC716EC396C009EDE33 /* FSNewRiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CC516EC396C009EDE33 /* FSNewRiderViewController.m */; };
+		46A06CC816EC396C009EDE33 /* FSNewRiderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CC616EC396C009EDE33 /* FSNewRiderViewController.xib */; };
+		46A06CCB16EC3C26009EDE33 /* modal_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CC916EC3C26009EDE33 /* modal_nav.png */; };
+		46A06CCC16EC3C26009EDE33 /* modal_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CCA16EC3C26009EDE33 /* modal_nav@2x.png */; };
 		885DF4FE16EB14E600A25348 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF4FD16EB14E600A25348 /* 57.png */; };
 		885DF50016EB14F100A25348 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF4FF16EB14F100A25348 /* 114.png */; };
 		885DF50216EB151700A25348 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF50116EB151700A25348 /* 144.png */; };
@@ -98,6 +102,11 @@
 		46A06CB216EC2710009EDE33 /* yes-tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yes-tile@2x.png"; path = "Resources/yes-tile@2x.png"; sourceTree = "<group>"; };
 		46A06CC016EC2B6D009EDE33 /* DIN-Light.otf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "DIN-Light.otf"; path = "Resources/DIN_font/DIN-Light/DIN-Light.otf"; sourceTree = "<group>"; };
 		46A06CC216EC2B74009EDE33 /* DIN-Regular.otf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "DIN-Regular.otf"; path = "Resources/DIN_font/DIN-Regular/DIN-Regular.otf"; sourceTree = "<group>"; };
+		46A06CC416EC396C009EDE33 /* FSNewRiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderViewController.h; sourceTree = "<group>"; };
+		46A06CC516EC396C009EDE33 /* FSNewRiderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderViewController.m; sourceTree = "<group>"; };
+		46A06CC616EC396C009EDE33 /* FSNewRiderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSNewRiderViewController.xib; sourceTree = "<group>"; };
+		46A06CC916EC3C26009EDE33 /* modal_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = modal_nav.png; path = Resources/modal_nav.png; sourceTree = "<group>"; };
+		46A06CCA16EC3C26009EDE33 /* modal_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "modal_nav@2x.png"; path = "Resources/modal_nav@2x.png"; sourceTree = "<group>"; };
 		6A38BEC6B0474D809A7DC9DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		885DF4FD16EB14E600A25348 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
 		885DF4FF16EB14F100A25348 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
@@ -201,6 +210,8 @@
 		46A06C9A16EC25BE009EDE33 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				46A06CC916EC3C26009EDE33 /* modal_nav.png */,
+				46A06CCA16EC3C26009EDE33 /* modal_nav@2x.png */,
 				46A06CC016EC2B6D009EDE33 /* DIN-Light.otf */,
 				46A06CC216EC2B74009EDE33 /* DIN-Regular.otf */,
 				46A06CB116EC2710009EDE33 /* no-tile@2x.png */,
@@ -283,6 +294,9 @@
 				C64C6F8C16EAE6A900CAD6C7 /* FSViewController_iPhone.xib */,
 				C64C6F8F16EAE6A900CAD6C7 /* FSViewController_iPad.xib */,
 				885DF57616EB190200A25348 /* FutureStop.xcdatamodeld */,
+				46A06CC416EC396C009EDE33 /* FSNewRiderViewController.h */,
+				46A06CC516EC396C009EDE33 /* FSNewRiderViewController.m */,
+				46A06CC616EC396C009EDE33 /* FSNewRiderViewController.xib */,
 				C64C6F7816EAE6A900CAD6C7 /* Supporting Files */,
 			);
 			path = FutureStop;
@@ -420,6 +434,9 @@
 				46A06CB416EC2710009EDE33 /* yes-tile@2x.png in Resources */,
 				46A06CC116EC2B6D009EDE33 /* DIN-Light.otf in Resources */,
 				46A06CC316EC2B74009EDE33 /* DIN-Regular.otf in Resources */,
+				46A06CC816EC396C009EDE33 /* FSNewRiderViewController.xib in Resources */,
+				46A06CCB16EC3C26009EDE33 /* modal_nav.png in Resources */,
+				46A06CCC16EC3C26009EDE33 /* modal_nav@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +492,7 @@
 				46A06C9316EC0ACC009EDE33 /* FSNewRiderAlertView.m in Sources */,
 				46A06C9616EC125D009EDE33 /* FSAlertViewGradient.m in Sources */,
 				46A06C9916EC1BD8009EDE33 /* FSNewRiderConfirm.m in Sources */,
+				46A06CC716EC396C009EDE33 /* FSNewRiderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
