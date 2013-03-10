@@ -7,30 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38C5F0A116EC224000AE80CC /* (null) in Resources */ = {isa = PBXBuildFile; };
 		4610FA5D4AD44427B8FCF5F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A38BEC6B0474D809A7DC9DE /* libPods.a */; };
-		46A06C9316EC0ACC009EDE33 /* FSNewRiderAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06C9216EC0ACC009EDE33 /* FSNewRiderAlertView.m */; };
-		46A06C9616EC125D009EDE33 /* FSAlertViewGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06C9516EC125D009EDE33 /* FSAlertViewGradient.m */; };
-		46A06C9916EC1BD8009EDE33 /* FSNewRiderConfirm.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06C9816EC1BD8009EDE33 /* FSNewRiderConfirm.m */; };
-		46A06CA616EC25CD009EDE33 /* cost.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06C9B16EC25CD009EDE33 /* cost.png */; };
-		46A06CA716EC25CD009EDE33 /* cost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06C9C16EC25CD009EDE33 /* cost@2x.png */; };
-		46A06CA816EC25CD009EDE33 /* destination.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06C9D16EC25CD009EDE33 /* destination.png */; };
-		46A06CA916EC25CD009EDE33 /* destination@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06C9E16EC25CD009EDE33 /* destination@2x.png */; };
-		46A06CAA16EC25CD009EDE33 /* DIN_font.zip in Resources */ = {isa = PBXBuildFile; fileRef = 46A06C9F16EC25CD009EDE33 /* DIN_font.zip */; };
-		46A06CAB16EC25CD009EDE33 /* eta.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CA016EC25CD009EDE33 /* eta.png */; };
-		46A06CAC16EC25CD009EDE33 /* eta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CA116EC25CD009EDE33 /* eta@2x.png */; };
-		46A06CAD16EC25CD009EDE33 /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CA216EC25CD009EDE33 /* no.png */; };
-		46A06CAE16EC25CD009EDE33 /* no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CA316EC25CD009EDE33 /* no@2x.png */; };
-		46A06CAF16EC25CD009EDE33 /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CA416EC25CD009EDE33 /* yes.png */; };
-		46A06CB016EC25CD009EDE33 /* yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CA516EC25CD009EDE33 /* yes@2x.png */; };
-		46A06CB316EC2710009EDE33 /* no-tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CB116EC2710009EDE33 /* no-tile@2x.png */; };
-		46A06CB416EC2710009EDE33 /* yes-tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CB216EC2710009EDE33 /* yes-tile@2x.png */; };
-		46A06CC116EC2B6D009EDE33 /* DIN-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CC016EC2B6D009EDE33 /* DIN-Light.otf */; };
-		46A06CC316EC2B74009EDE33 /* DIN-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CC216EC2B74009EDE33 /* DIN-Regular.otf */; };
-		46A06CC716EC396C009EDE33 /* FSNewRiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CC516EC396C009EDE33 /* FSNewRiderViewController.m */; };
-		46A06CC816EC396C009EDE33 /* FSNewRiderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CC616EC396C009EDE33 /* FSNewRiderViewController.xib */; };
-		46A06CCB16EC3C26009EDE33 /* modal_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CC916EC3C26009EDE33 /* modal_nav.png */; };
-		46A06CCC16EC3C26009EDE33 /* modal_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CCA16EC3C26009EDE33 /* modal_nav@2x.png */; };
+		46A06C9316EC0ACC009EDE33 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		46A06C9616EC125D009EDE33 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		46A06C9916EC1BD8009EDE33 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		46A06CE116EC41A1009EDE33 /* cost.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CCD16EC41A1009EDE33 /* cost.png */; };
+		46A06CE216EC41A1009EDE33 /* cost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CCE16EC41A1009EDE33 /* cost@2x.png */; };
+		46A06CE316EC41A1009EDE33 /* destination.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CCF16EC41A1009EDE33 /* destination.png */; };
+		46A06CE416EC41A1009EDE33 /* destination@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD016EC41A1009EDE33 /* destination@2x.png */; };
+		46A06CE516EC41A1009EDE33 /* eta.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD116EC41A1009EDE33 /* eta.png */; };
+		46A06CE616EC41A1009EDE33 /* eta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD216EC41A1009EDE33 /* eta@2x.png */; };
+		46A06CE716EC41A1009EDE33 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD316EC41A1009EDE33 /* footer.png */; };
+		46A06CE816EC41A1009EDE33 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD416EC41A1009EDE33 /* footer@2x.png */; };
+		46A06CE916EC41A1009EDE33 /* main_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD516EC41A1009EDE33 /* main_nav.png */; };
+		46A06CEA16EC41A1009EDE33 /* main_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD616EC41A1009EDE33 /* main_nav@2x.png */; };
+		46A06CEB16EC41A1009EDE33 /* modal_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD716EC41A1009EDE33 /* modal_nav.png */; };
+		46A06CEC16EC41A1009EDE33 /* modal_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD816EC41A1009EDE33 /* modal_nav@2x.png */; };
+		46A06CED16EC41A1009EDE33 /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CD916EC41A1009EDE33 /* no.png */; };
+		46A06CEE16EC41A1009EDE33 /* no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CDA16EC41A1009EDE33 /* no@2x.png */; };
+		46A06CEF16EC41A1009EDE33 /* riders.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CDB16EC41A1009EDE33 /* riders.png */; };
+		46A06CF016EC41A1009EDE33 /* riders@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CDC16EC41A1009EDE33 /* riders@2x.png */; };
+		46A06CF116EC41A1009EDE33 /* transpo_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CDD16EC41A1009EDE33 /* transpo_main.png */; };
+		46A06CF216EC41A1009EDE33 /* transpo_newRider.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CDE16EC41A1009EDE33 /* transpo_newRider.png */; };
+		46A06CF316EC41A1009EDE33 /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CDF16EC41A1009EDE33 /* yes.png */; };
+		46A06CF416EC41A1009EDE33 /* yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CE016EC41A1009EDE33 /* yes@2x.png */; };
+		46A06CFE16EC41E6009EDE33 /* FSAlertViewGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CF616EC41E6009EDE33 /* FSAlertViewGradient.m */; };
+		46A06CFF16EC41E6009EDE33 /* FSNewRiderAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CF816EC41E6009EDE33 /* FSNewRiderAlertView.m */; };
+		46A06D0016EC41E6009EDE33 /* FSNewRiderConfirm.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CFA16EC41E6009EDE33 /* FSNewRiderConfirm.m */; };
+		46A06D0116EC41E6009EDE33 /* FSNewRiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CFC16EC41E6009EDE33 /* FSNewRiderViewController.m */; };
+		46A06D0216EC41E6009EDE33 /* FSNewRiderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A06CFD16EC41E6009EDE33 /* FSNewRiderViewController.xib */; };
 		885DF4FE16EB14E600A25348 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF4FD16EB14E600A25348 /* 57.png */; };
 		885DF50016EB14F100A25348 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF4FF16EB14F100A25348 /* 114.png */; };
 		885DF50216EB151700A25348 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF50116EB151700A25348 /* 144.png */; };
@@ -81,32 +86,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46A06C9116EC0ACC009EDE33 /* FSNewRiderAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderAlertView.h; sourceTree = "<group>"; };
-		46A06C9216EC0ACC009EDE33 /* FSNewRiderAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderAlertView.m; sourceTree = "<group>"; };
-		46A06C9416EC125D009EDE33 /* FSAlertViewGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAlertViewGradient.h; sourceTree = "<group>"; };
-		46A06C9516EC125D009EDE33 /* FSAlertViewGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAlertViewGradient.m; sourceTree = "<group>"; };
-		46A06C9716EC1BD8009EDE33 /* FSNewRiderConfirm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderConfirm.h; sourceTree = "<group>"; };
-		46A06C9816EC1BD8009EDE33 /* FSNewRiderConfirm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderConfirm.m; sourceTree = "<group>"; };
-		46A06C9B16EC25CD009EDE33 /* cost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cost.png; path = Resources/cost.png; sourceTree = "<group>"; };
-		46A06C9C16EC25CD009EDE33 /* cost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cost@2x.png"; path = "Resources/cost@2x.png"; sourceTree = "<group>"; };
-		46A06C9D16EC25CD009EDE33 /* destination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = destination.png; path = Resources/destination.png; sourceTree = "<group>"; };
-		46A06C9E16EC25CD009EDE33 /* destination@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "destination@2x.png"; path = "Resources/destination@2x.png"; sourceTree = "<group>"; };
-		46A06C9F16EC25CD009EDE33 /* DIN_font.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = DIN_font.zip; path = Resources/DIN_font.zip; sourceTree = "<group>"; };
-		46A06CA016EC25CD009EDE33 /* eta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eta.png; path = Resources/eta.png; sourceTree = "<group>"; };
-		46A06CA116EC25CD009EDE33 /* eta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "eta@2x.png"; path = "Resources/eta@2x.png"; sourceTree = "<group>"; };
-		46A06CA216EC25CD009EDE33 /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no.png; path = Resources/no.png; sourceTree = "<group>"; };
-		46A06CA316EC25CD009EDE33 /* no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no@2x.png"; path = "Resources/no@2x.png"; sourceTree = "<group>"; };
-		46A06CA416EC25CD009EDE33 /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yes.png; path = Resources/yes.png; sourceTree = "<group>"; };
-		46A06CA516EC25CD009EDE33 /* yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yes@2x.png"; path = "Resources/yes@2x.png"; sourceTree = "<group>"; };
-		46A06CB116EC2710009EDE33 /* no-tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-tile@2x.png"; path = "Resources/no-tile@2x.png"; sourceTree = "<group>"; };
-		46A06CB216EC2710009EDE33 /* yes-tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yes-tile@2x.png"; path = "Resources/yes-tile@2x.png"; sourceTree = "<group>"; };
-		46A06CC016EC2B6D009EDE33 /* DIN-Light.otf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "DIN-Light.otf"; path = "Resources/DIN_font/DIN-Light/DIN-Light.otf"; sourceTree = "<group>"; };
-		46A06CC216EC2B74009EDE33 /* DIN-Regular.otf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "DIN-Regular.otf"; path = "Resources/DIN_font/DIN-Regular/DIN-Regular.otf"; sourceTree = "<group>"; };
-		46A06CC416EC396C009EDE33 /* FSNewRiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderViewController.h; sourceTree = "<group>"; };
-		46A06CC516EC396C009EDE33 /* FSNewRiderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderViewController.m; sourceTree = "<group>"; };
-		46A06CC616EC396C009EDE33 /* FSNewRiderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSNewRiderViewController.xib; sourceTree = "<group>"; };
-		46A06CC916EC3C26009EDE33 /* modal_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = modal_nav.png; path = Resources/modal_nav.png; sourceTree = "<group>"; };
-		46A06CCA16EC3C26009EDE33 /* modal_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "modal_nav@2x.png"; path = "Resources/modal_nav@2x.png"; sourceTree = "<group>"; };
+		46A06CCD16EC41A1009EDE33 /* cost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cost.png; path = FutureStop/cost.png; sourceTree = "<group>"; };
+		46A06CCE16EC41A1009EDE33 /* cost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cost@2x.png"; path = "FutureStop/cost@2x.png"; sourceTree = "<group>"; };
+		46A06CCF16EC41A1009EDE33 /* destination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = destination.png; path = FutureStop/destination.png; sourceTree = "<group>"; };
+		46A06CD016EC41A1009EDE33 /* destination@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "destination@2x.png"; path = "FutureStop/destination@2x.png"; sourceTree = "<group>"; };
+		46A06CD116EC41A1009EDE33 /* eta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eta.png; path = FutureStop/eta.png; sourceTree = "<group>"; };
+		46A06CD216EC41A1009EDE33 /* eta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "eta@2x.png"; path = "FutureStop/eta@2x.png"; sourceTree = "<group>"; };
+		46A06CD316EC41A1009EDE33 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = footer.png; path = FutureStop/footer.png; sourceTree = "<group>"; };
+		46A06CD416EC41A1009EDE33 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "footer@2x.png"; path = "FutureStop/footer@2x.png"; sourceTree = "<group>"; };
+		46A06CD516EC41A1009EDE33 /* main_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_nav.png; path = FutureStop/main_nav.png; sourceTree = "<group>"; };
+		46A06CD616EC41A1009EDE33 /* main_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "main_nav@2x.png"; path = "FutureStop/main_nav@2x.png"; sourceTree = "<group>"; };
+		46A06CD716EC41A1009EDE33 /* modal_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = modal_nav.png; path = FutureStop/modal_nav.png; sourceTree = "<group>"; };
+		46A06CD816EC41A1009EDE33 /* modal_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "modal_nav@2x.png"; path = "FutureStop/modal_nav@2x.png"; sourceTree = "<group>"; };
+		46A06CD916EC41A1009EDE33 /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no.png; path = FutureStop/no.png; sourceTree = "<group>"; };
+		46A06CDA16EC41A1009EDE33 /* no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no@2x.png"; path = "FutureStop/no@2x.png"; sourceTree = "<group>"; };
+		46A06CDB16EC41A1009EDE33 /* riders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = riders.png; path = FutureStop/riders.png; sourceTree = "<group>"; };
+		46A06CDC16EC41A1009EDE33 /* riders@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "riders@2x.png"; path = "FutureStop/riders@2x.png"; sourceTree = "<group>"; };
+		46A06CDD16EC41A1009EDE33 /* transpo_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transpo_main.png; path = FutureStop/transpo_main.png; sourceTree = "<group>"; };
+		46A06CDE16EC41A1009EDE33 /* transpo_newRider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transpo_newRider.png; path = FutureStop/transpo_newRider.png; sourceTree = "<group>"; };
+		46A06CDF16EC41A1009EDE33 /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yes.png; path = FutureStop/yes.png; sourceTree = "<group>"; };
+		46A06CE016EC41A1009EDE33 /* yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yes@2x.png"; path = "FutureStop/yes@2x.png"; sourceTree = "<group>"; };
+		46A06CF516EC41E6009EDE33 /* FSAlertViewGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAlertViewGradient.h; sourceTree = "<group>"; };
+		46A06CF616EC41E6009EDE33 /* FSAlertViewGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAlertViewGradient.m; sourceTree = "<group>"; };
+		46A06CF716EC41E6009EDE33 /* FSNewRiderAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderAlertView.h; sourceTree = "<group>"; };
+		46A06CF816EC41E6009EDE33 /* FSNewRiderAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderAlertView.m; sourceTree = "<group>"; };
+		46A06CF916EC41E6009EDE33 /* FSNewRiderConfirm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderConfirm.h; sourceTree = "<group>"; };
+		46A06CFA16EC41E6009EDE33 /* FSNewRiderConfirm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderConfirm.m; sourceTree = "<group>"; };
+		46A06CFB16EC41E6009EDE33 /* FSNewRiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNewRiderViewController.h; sourceTree = "<group>"; };
+		46A06CFC16EC41E6009EDE33 /* FSNewRiderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNewRiderViewController.m; sourceTree = "<group>"; };
+		46A06CFD16EC41E6009EDE33 /* FSNewRiderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSNewRiderViewController.xib; sourceTree = "<group>"; };
 		6A38BEC6B0474D809A7DC9DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		885DF4FD16EB14E600A25348 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
 		885DF4FF16EB14F100A25348 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
@@ -194,15 +202,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46A06C9016EC0A94009EDE33 /* Alert View */ = {
+		38FCE07216EC390100FBD486 /* Alert View */ = {
 			isa = PBXGroup;
 			children = (
-				46A06C9116EC0ACC009EDE33 /* FSNewRiderAlertView.h */,
-				46A06C9216EC0ACC009EDE33 /* FSNewRiderAlertView.m */,
-				46A06C9416EC125D009EDE33 /* FSAlertViewGradient.h */,
-				46A06C9516EC125D009EDE33 /* FSAlertViewGradient.m */,
-				46A06C9716EC1BD8009EDE33 /* FSNewRiderConfirm.h */,
-				46A06C9816EC1BD8009EDE33 /* FSNewRiderConfirm.m */,
+				46A06CF516EC41E6009EDE33 /* FSAlertViewGradient.h */,
+				46A06CF616EC41E6009EDE33 /* FSAlertViewGradient.m */,
+				46A06CF716EC41E6009EDE33 /* FSNewRiderAlertView.h */,
+				46A06CF816EC41E6009EDE33 /* FSNewRiderAlertView.m */,
+				46A06CF916EC41E6009EDE33 /* FSNewRiderConfirm.h */,
+				46A06CFA16EC41E6009EDE33 /* FSNewRiderConfirm.m */,
+				46A06CFB16EC41E6009EDE33 /* FSNewRiderViewController.h */,
+				46A06CFC16EC41E6009EDE33 /* FSNewRiderViewController.m */,
+				46A06CFD16EC41E6009EDE33 /* FSNewRiderViewController.xib */,
 			);
 			name = "Alert View";
 			sourceTree = "<group>";
@@ -210,23 +221,26 @@
 		46A06C9A16EC25BE009EDE33 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				46A06CC916EC3C26009EDE33 /* modal_nav.png */,
-				46A06CCA16EC3C26009EDE33 /* modal_nav@2x.png */,
-				46A06CC016EC2B6D009EDE33 /* DIN-Light.otf */,
-				46A06CC216EC2B74009EDE33 /* DIN-Regular.otf */,
-				46A06CB116EC2710009EDE33 /* no-tile@2x.png */,
-				46A06CB216EC2710009EDE33 /* yes-tile@2x.png */,
-				46A06C9B16EC25CD009EDE33 /* cost.png */,
-				46A06C9C16EC25CD009EDE33 /* cost@2x.png */,
-				46A06C9D16EC25CD009EDE33 /* destination.png */,
-				46A06C9E16EC25CD009EDE33 /* destination@2x.png */,
-				46A06C9F16EC25CD009EDE33 /* DIN_font.zip */,
-				46A06CA016EC25CD009EDE33 /* eta.png */,
-				46A06CA116EC25CD009EDE33 /* eta@2x.png */,
-				46A06CA216EC25CD009EDE33 /* no.png */,
-				46A06CA316EC25CD009EDE33 /* no@2x.png */,
-				46A06CA416EC25CD009EDE33 /* yes.png */,
-				46A06CA516EC25CD009EDE33 /* yes@2x.png */,
+				46A06CCD16EC41A1009EDE33 /* cost.png */,
+				46A06CCE16EC41A1009EDE33 /* cost@2x.png */,
+				46A06CCF16EC41A1009EDE33 /* destination.png */,
+				46A06CD016EC41A1009EDE33 /* destination@2x.png */,
+				46A06CD116EC41A1009EDE33 /* eta.png */,
+				46A06CD216EC41A1009EDE33 /* eta@2x.png */,
+				46A06CD316EC41A1009EDE33 /* footer.png */,
+				46A06CD416EC41A1009EDE33 /* footer@2x.png */,
+				46A06CD516EC41A1009EDE33 /* main_nav.png */,
+				46A06CD616EC41A1009EDE33 /* main_nav@2x.png */,
+				46A06CD716EC41A1009EDE33 /* modal_nav.png */,
+				46A06CD816EC41A1009EDE33 /* modal_nav@2x.png */,
+				46A06CD916EC41A1009EDE33 /* no.png */,
+				46A06CDA16EC41A1009EDE33 /* no@2x.png */,
+				46A06CDB16EC41A1009EDE33 /* riders.png */,
+				46A06CDC16EC41A1009EDE33 /* riders@2x.png */,
+				46A06CDD16EC41A1009EDE33 /* transpo_main.png */,
+				46A06CDE16EC41A1009EDE33 /* transpo_newRider.png */,
+				46A06CDF16EC41A1009EDE33 /* yes.png */,
+				46A06CE016EC41A1009EDE33 /* yes@2x.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -286,7 +300,7 @@
 		C64C6F7716EAE6A900CAD6C7 /* FutureStop */ = {
 			isa = PBXGroup;
 			children = (
-				46A06C9016EC0A94009EDE33 /* Alert View */,
+				38FCE07216EC390100FBD486 /* Alert View */,
 				C64C6F8016EAE6A900CAD6C7 /* FSAppDelegate.h */,
 				C64C6F8116EAE6A900CAD6C7 /* FSAppDelegate.m */,
 				C64C6F8916EAE6A900CAD6C7 /* FSViewController.h */,
@@ -294,9 +308,6 @@
 				C64C6F8C16EAE6A900CAD6C7 /* FSViewController_iPhone.xib */,
 				C64C6F8F16EAE6A900CAD6C7 /* FSViewController_iPad.xib */,
 				885DF57616EB190200A25348 /* FutureStop.xcdatamodeld */,
-				46A06CC416EC396C009EDE33 /* FSNewRiderViewController.h */,
-				46A06CC516EC396C009EDE33 /* FSNewRiderViewController.m */,
-				46A06CC616EC396C009EDE33 /* FSNewRiderViewController.xib */,
 				C64C6F7816EAE6A900CAD6C7 /* Supporting Files */,
 			);
 			path = FutureStop;
@@ -418,25 +429,27 @@
 				885DF50016EB14F100A25348 /* 114.png in Resources */,
 				885DF50216EB151700A25348 /* 144.png in Resources */,
 				885DF50416EB151F00A25348 /* 72.png in Resources */,
-				38C5F0A116EC224000AE80CC /* (null) in Resources */,
-				46A06CA616EC25CD009EDE33 /* cost.png in Resources */,
-				46A06CA716EC25CD009EDE33 /* cost@2x.png in Resources */,
-				46A06CA816EC25CD009EDE33 /* destination.png in Resources */,
-				46A06CA916EC25CD009EDE33 /* destination@2x.png in Resources */,
-				46A06CAA16EC25CD009EDE33 /* DIN_font.zip in Resources */,
-				46A06CAB16EC25CD009EDE33 /* eta.png in Resources */,
-				46A06CAC16EC25CD009EDE33 /* eta@2x.png in Resources */,
-				46A06CAD16EC25CD009EDE33 /* no.png in Resources */,
-				46A06CAE16EC25CD009EDE33 /* no@2x.png in Resources */,
-				46A06CAF16EC25CD009EDE33 /* yes.png in Resources */,
-				46A06CB016EC25CD009EDE33 /* yes@2x.png in Resources */,
-				46A06CB316EC2710009EDE33 /* no-tile@2x.png in Resources */,
-				46A06CB416EC2710009EDE33 /* yes-tile@2x.png in Resources */,
-				46A06CC116EC2B6D009EDE33 /* DIN-Light.otf in Resources */,
-				46A06CC316EC2B74009EDE33 /* DIN-Regular.otf in Resources */,
-				46A06CC816EC396C009EDE33 /* FSNewRiderViewController.xib in Resources */,
-				46A06CCB16EC3C26009EDE33 /* modal_nav.png in Resources */,
-				46A06CCC16EC3C26009EDE33 /* modal_nav@2x.png in Resources */,
+				46A06CE116EC41A1009EDE33 /* cost.png in Resources */,
+				46A06CE216EC41A1009EDE33 /* cost@2x.png in Resources */,
+				46A06CE316EC41A1009EDE33 /* destination.png in Resources */,
+				46A06CE416EC41A1009EDE33 /* destination@2x.png in Resources */,
+				46A06CE516EC41A1009EDE33 /* eta.png in Resources */,
+				46A06CE616EC41A1009EDE33 /* eta@2x.png in Resources */,
+				46A06CE716EC41A1009EDE33 /* footer.png in Resources */,
+				46A06CE816EC41A1009EDE33 /* footer@2x.png in Resources */,
+				46A06CE916EC41A1009EDE33 /* main_nav.png in Resources */,
+				46A06CEA16EC41A1009EDE33 /* main_nav@2x.png in Resources */,
+				46A06CEB16EC41A1009EDE33 /* modal_nav.png in Resources */,
+				46A06CEC16EC41A1009EDE33 /* modal_nav@2x.png in Resources */,
+				46A06CED16EC41A1009EDE33 /* no.png in Resources */,
+				46A06CEE16EC41A1009EDE33 /* no@2x.png in Resources */,
+				46A06CEF16EC41A1009EDE33 /* riders.png in Resources */,
+				46A06CF016EC41A1009EDE33 /* riders@2x.png in Resources */,
+				46A06CF116EC41A1009EDE33 /* transpo_main.png in Resources */,
+				46A06CF216EC41A1009EDE33 /* transpo_newRider.png in Resources */,
+				46A06CF316EC41A1009EDE33 /* yes.png in Resources */,
+				46A06CF416EC41A1009EDE33 /* yes@2x.png in Resources */,
+				46A06D0216EC41E6009EDE33 /* FSNewRiderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,10 +502,13 @@
 				C64C6F8216EAE6A900CAD6C7 /* FSAppDelegate.m in Sources */,
 				C64C6F8B16EAE6A900CAD6C7 /* FSViewController.m in Sources */,
 				885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */,
-				46A06C9316EC0ACC009EDE33 /* FSNewRiderAlertView.m in Sources */,
-				46A06C9616EC125D009EDE33 /* FSAlertViewGradient.m in Sources */,
-				46A06C9916EC1BD8009EDE33 /* FSNewRiderConfirm.m in Sources */,
-				46A06CC716EC396C009EDE33 /* FSNewRiderViewController.m in Sources */,
+				46A06C9316EC0ACC009EDE33 /* (null) in Sources */,
+				46A06C9616EC125D009EDE33 /* (null) in Sources */,
+				46A06C9916EC1BD8009EDE33 /* (null) in Sources */,
+				46A06CFE16EC41E6009EDE33 /* FSAlertViewGradient.m in Sources */,
+				46A06CFF16EC41E6009EDE33 /* FSNewRiderAlertView.m in Sources */,
+				46A06D0016EC41E6009EDE33 /* FSNewRiderConfirm.m in Sources */,
+				46A06D0116EC41E6009EDE33 /* FSNewRiderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
