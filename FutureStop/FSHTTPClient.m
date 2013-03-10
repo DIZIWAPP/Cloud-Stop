@@ -8,7 +8,7 @@
 
 #import "FSHTTPClient.h"
 
-NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api";
+NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
 
 @implementation FSHTTPClient
 
@@ -78,7 +78,8 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api";
 					   successBlock:(void (^)(FSPerson *))successBlock
 					   failureBlock:(FSFailureBlock)failureBlock {
 	
-	NSString *path = [@"/person" stringByAppendingPathComponent:uniqueId];
+	NSString *path = [@"person" stringByAppendingPathComponent:uniqueId];
+	
 	[self sendGETToPath:path
 		   successBlock:successBlock
 		   failureBlock:failureBlock];
@@ -89,7 +90,7 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api";
 					successBlock:(void (^)(FSPerson *))successBlock
 					failureBlock:(FSFailureBlock)failureBlock {
 	
-	NSString *path = [@"/person" stringByAppendingPathComponent:uniqueId];
+	NSString *path = [@"person" stringByAppendingPathComponent:uniqueId];
 	NSDictionary *body = @{@"eta" : etaInSeconds};
 	
 	[self sendPOSTToPath:path
