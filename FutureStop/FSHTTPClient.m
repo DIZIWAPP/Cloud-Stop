@@ -39,17 +39,61 @@ NSString * const kFSBaseURL = @"http://something.mutualmobile.com";
     return self;
 }
 
+- (void)sendPOSTToPath:(NSString *)path
+			  withBody:(NSDictionary *)body
+		  successBlock:(void (^)(id response))successBlock
+		  failureBlock:(FSFailureBlock)failureBLock {
+	
+	[self postPath:path
+		parameters:body
+		   success:^(AFHTTPRequestOperation *operation, id responseObject) {
+			   if (successBlock != nil) {
+				   successBlock(responseObject);
+			   }
+		   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+			   if (failureBLock != nil) {
+				   failureBLock(error);
+			   }
+		   }];
+}
+
+- (void)sendGETToPath:(NSString *)path
+		 successBlock:(void (^)(id response))successBlock
+		 failureBlock:(FSFailureBlock)failureBLock {
+	
+	[self getPath:path
+	   parameters:nil
+		  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+			  if (successBlock != nil) {
+				  successBlock(responseObject);
+			  }
+		  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+			  if (failureBLock != nil) {
+				  failureBLock(error);
+			  }
+		  }];
+}
+
 - (void)fetchPersonInfoWithUniqueId:(NSString *)uniqueId
 					   successBlock:(void (^)(FSPerson *))successBlock
 					   failureBlock:(FSFailureBlock)failureBlock {
 	
+	NSString *path = [@"/person" stringByAppendingPathComponent:uniqueId];
+	[self sendGETToPath:path
+		   successBlock:successBlock
+		   failureBlock:failureBlock];
 }
 
 - (void)createPersonWithUniqueId:(NSString *)uniqueId
 					successBlock:(void (^)(FSPerson *))successBlock
 					failureBlock:(FSFailureBlock)failureBlock {
 	
-
+	NSDictionary *body = @{@"uniqueId" : uniqueId};
+	
+	[self sendPOSTToPath:@"/fakepersonpath"
+				withBody:body
+			successBlock:successBlock
+			failureBlock:failureBlock];
 }
 
 @end
