@@ -10,6 +10,8 @@
 #import "FSNewRiderConfirm.h"
 #import "FSNewRiderViewController.h"
 
+const NSTimeInterval kPollingTimerInterval = 3.0f;
+
 @interface FSViewController ()
 @property (nonatomic, strong) FSNewRiderConfirm *addRiderConfirmView;
 @end
@@ -18,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	[self configurePollingTimer];
     
     self.addRiderConfirmView = [[FSNewRiderConfirm alloc] initWithFrame:self.view.bounds];
     self.addRiderConfirmView.delegate = self;
@@ -29,6 +33,22 @@
         FSNewRiderViewController *vc = [[FSNewRiderViewController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
     });
+}
+
+#pragma mark - Polling
+
+- (void)configurePollingTimer {
+    [self.pollingTimer invalidate];
+    NSTimer *pollingTimer = [NSTimer scheduledTimerWithTimeInterval:kPollingTimerInterval
+                                                             target:self
+                                                           selector:@selector(timerFired:)
+                                                           userInfo:nil
+                                                            repeats:YES];
+    self.pollingTimer = pollingTimer;
+}
+
+- (void)timerFired:(NSTimer*)timer {
+	
 }
 
 #pragma mark - Accessors 
