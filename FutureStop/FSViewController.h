@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *costValueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *destinationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *destinationValueLabel;
+@property (strong, nonatomic) NSTimer *pollingTimer;
 
 - (void)setETA:(NSString*)eta;
 - (void)setCost:(NSString*)cost;
