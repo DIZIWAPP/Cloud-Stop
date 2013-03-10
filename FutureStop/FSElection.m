@@ -12,7 +12,7 @@
 
 + (instancetype)electionFromServerResponse:(NSDictionary *)serverResponse {
     
-    if (serverResponse == nil) {
+    if (serverResponse == [NSNull null]) {
         return nil;
     }
     
@@ -26,6 +26,8 @@
     } else {
         election.result = FSElectionStatusFailed;
     }
+	
+	election.person = serverResponse[@"person"];
     
     return election;
 }

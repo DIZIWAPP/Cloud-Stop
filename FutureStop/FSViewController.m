@@ -9,6 +9,9 @@
 #import "FSViewController.h"
 #import "FSNewRiderConfirm.h"
 #import "FSNewRiderViewController.h"
+#import "FSHTTPClient.h"
+#import "FSPerson.h"
+#import "FSElection.h"
 
 const NSTimeInterval kPollingTimerInterval = 3.0f;
 
@@ -21,18 +24,24 @@ const NSTimeInterval kPollingTimerInterval = 3.0f;
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	self.person = [[FSPerson alloc] init];
+    
+	NSInteger etaSeconds = arc4random_uniform(25 * 60);
+	etaSeconds += (5 * 60);
+	
+	[[FSHTTPClient sharedHTTPClient] createPersonWithUniqueId:self.person.uniqueId
+												 etaInSeconds:@(etaSeconds)
+												 successBlock:^(FSPerson *person) {
+													 [self createdPerson:person];
+												 }
+												 failureBlock:^(NSError *error) {
+													 [self createdPerson:self.person];
+												 }];
+}
+
+- (void)createdPerson:(FSPerson *)person {
+	self.person = person;
 	[self configurePollingTimer];
-    
-    self.addRiderConfirmView = [[FSNewRiderConfirm alloc] initWithFrame:self.view.bounds];
-    self.addRiderConfirmView.delegate = self;
-    [self.view addSubview:self.addRiderConfirmView];
-    
-    double delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        FSNewRiderViewController *vc = [[FSNewRiderViewController alloc] init];
-        [self presentViewController:vc animated:YES completion:nil];
-    });
 }
 
 #pragma mark - Polling
@@ -48,7 +57,11 @@ const NSTimeInterval kPollingTimerInterval = 3.0f;
 }
 
 - (void)timerFired:(NSTimer*)timer {
-	
+	[[FSHTTPClient sharedHTTPClient] fetchPersonInfoWithUniqueId:self.person.uniqueId
+													successBlock:^(FSPerson *person) {
+														[self updatePerson:person];
+													}
+													failureBlock:nil];
 }
 
 #pragma mark - Accessors 
@@ -71,6 +84,24 @@ const NSTimeInterval kPollingTimerInterval = 3.0f;
 
 - (void)rejectedNewRider:(FSNewRiderConfirm *)alertView{
     
+}
+
+#pragma mark - New Rider
+
+- (void)displayNewRiderViewController {
+	FSNewRiderViewController *vc = [[FSNewRiderViewController alloc] init];
+	[self presentViewController:vc animated:YES completion:nil];
+}
+
+#pragma mark - Person
+
+- (void)updatePerson:(FSPerson *)person {
+	NSLog(@"person: %@", person);
+	if (person.election != nil) {
+		if ([person.election.person isEqualToString:person.uniqueId] == NO) {
+			[self displayNewRiderViewController];
+		}
+	}
 }
 
 @end

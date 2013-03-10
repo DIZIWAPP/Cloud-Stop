@@ -6,10 +6,12 @@
 //  Copyright (c) 2013 Mutual Mobile SXSW Creatathon. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FSPerson.h"
 #import "FSNewRiderConfirm.h"
 
 @interface FSViewController : UIViewController <FSNewRiderConfirmDelegate>
+
+@property (nonatomic, strong) FSPerson *person;
 @property (weak, nonatomic) IBOutlet UILabel *etaLabel;
 @property (weak, nonatomic) IBOutlet UILabel *etaValueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *costLabel;

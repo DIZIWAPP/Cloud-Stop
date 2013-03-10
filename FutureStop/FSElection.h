@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger, FSElectionStatus) {
 
 @interface FSElection : NSObject
 
+@property (nonatomic, strong) NSString *person;
 @property (nonatomic, assign) FSElectionStatus result;
 
 + (instancetype)electionFromServerResponse:(NSDictionary *)serverResponse;

@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Mutual Mobile SXSW Creatathon. All rights reserved.
 //
 
-#define FAKE_ASS_JSON 0
+//#define FAKE_ASS_JSON 0
 
 #import "FSHTTPClient.h"
 #import "NSString+jsonParsing.h"
 
-NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
+NSString * const kFSBaseURL = @"http://futurestop.herokuapp.com/api/";
 
 @implementation FSHTTPClient
 
@@ -32,7 +32,7 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
     if (self) {
 		
         [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
-        [self setParameterEncoding:AFFormURLParameterEncoding];
+        [self setParameterEncoding:AFJSONParameterEncoding];
         [self setDefaultHeader:@"Accept" value:@"application/json"];
         [self setDefaultHeader:@"Content-Type" value:@"application/json"];
         
@@ -47,11 +47,15 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
 		  successBlock:(void (^)(id response))successBlock
 		  failureBlock:(FSFailureBlock)failureBLock {
 	
+	NSLog(@"POST %@", path);
+	NSLog(@"Body: %@", body);
+	
 	[self postPath:path
 		parameters:body
 		   success:^(AFHTTPRequestOperation *operation, id responseObject) {
 			   if (successBlock != nil) {
-				   successBlock(responseObject);
+				   FSPerson *person = [FSPerson personFromServerResponse:responseObject];
+				   successBlock(person);
 			   }
 		   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 			   if (failureBLock != nil) {
@@ -68,7 +72,8 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
 	   parameters:nil
 		  success:^(AFHTTPRequestOperation *operation, id responseObject) {
 			  if (successBlock != nil) {
-				  successBlock(responseObject);
+				  FSPerson *person = [FSPerson personFromServerResponse:responseObject];
+				  successBlock(person);
 			  }
 		  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 			  if (failureBLock != nil) {
@@ -92,7 +97,7 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
     
 #else
 	
-	NSString *path = [@"person" stringByAppendingPathComponent:uniqueId];
+	NSString *path = [uniqueId stringByAppendingString:@"/"];
 	
 	[self sendGETToPath:path
 		   successBlock:successBlock
@@ -117,7 +122,7 @@ NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api/";
     
 #else
 	
-	NSString *path = [@"person" stringByAppendingPathComponent:uniqueId];
+	NSString *path = [uniqueId stringByAppendingString:@"/"];
 	NSDictionary *body = @{@"eta" : etaInSeconds};
 	
 	[self sendPOSTToPath:path

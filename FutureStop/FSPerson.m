@@ -14,9 +14,7 @@
 + (FSPerson *)personFromServerResponse:(NSDictionary *)serverResponse {
     
     FSPerson *person = [[FSPerson alloc] init];
-    person.uniqueId = serverResponse[@"personId"];
-    person.isLoser = [serverResponse[@"isLoser"] boolValue];
-    person.isBoarded = [serverResponse[@"isBoarded"] boolValue];
+    person.uniqueId = serverResponse[@"udid"];
     
     FSElection *election = [FSElection electionFromServerResponse:serverResponse[@"election"]];
     person.election = election;
