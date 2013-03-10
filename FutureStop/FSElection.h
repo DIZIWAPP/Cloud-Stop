@@ -6,8 +6,14 @@
 //  Copyright (c) 2013 Mutual Mobile SXSW Creatathon. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+typedef NS_ENUM(NSInteger, FSElectionStatus) {
+	FSElectionStatusNone,
+	FSElectionStatusPassed,
+	FSElectionStatusFailed
+};
 
 @interface FSElection : NSObject
+
+@property (nonatomic, assign) FSElectionStatus result;
 
 @end
