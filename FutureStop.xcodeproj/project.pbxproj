@@ -11,6 +11,7 @@
 		426C62F216EC1E9900FD1B55 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 426C62F016EC1E9900FD1B55 /* NSDictionary+JSONString.m */; };
 		42C346C816EC319200DA86D6 /* personPost.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C346C716EC319200DA86D6 /* personPost.json */; };
 		42C346CB16EC33A200DA86D6 /* personGet.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C346CA16EC33A200DA86D6 /* personGet.json */; };
+		42C346CF16EC356800DA86D6 /* personGetElection.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C346CE16EC356800DA86D6 /* personGetElection.json */; };
 		4610FA5D4AD44427B8FCF5F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A38BEC6B0474D809A7DC9DE /* libPods.a */; };
 		885DF4FE16EB14E600A25348 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF4FD16EB14E600A25348 /* 57.png */; };
 		885DF50016EB14F100A25348 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF4FF16EB14F100A25348 /* 114.png */; };
@@ -73,6 +74,7 @@
 		426C62F016EC1E9900FD1B55 /* NSDictionary+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONString.m"; sourceTree = "<group>"; };
 		42C346C716EC319200DA86D6 /* personPost.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personPost.json; sourceTree = "<group>"; };
 		42C346CA16EC33A200DA86D6 /* personGet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personGet.json; sourceTree = "<group>"; };
+		42C346CE16EC356800DA86D6 /* personGetElection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personGetElection.json; sourceTree = "<group>"; };
 		6A38BEC6B0474D809A7DC9DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		885DF4FD16EB14E600A25348 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
 		885DF4FF16EB14F100A25348 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				42C346C716EC319200DA86D6 /* personPost.json */,
 				42C346CA16EC33A200DA86D6 /* personGet.json */,
+				42C346CE16EC356800DA86D6 /* personGetElection.json */,
 			);
 			name = "Fake Ass JSON";
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				885DF50416EB151F00A25348 /* 72.png in Resources */,
 				42C346C816EC319200DA86D6 /* personPost.json in Resources */,
 				42C346CB16EC33A200DA86D6 /* personGet.json in Resources */,
+				42C346CF16EC356800DA86D6 /* personGetElection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

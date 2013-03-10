@@ -1,7 +1,5 @@
 {
-    "Person": {
-        "uniqueId" : "1"
-        "isBoarded" : "false"
-        "isLoser" : "false"
-    }
+    "uniqueId" : "1"
+    "isBoarded" : false
+    "isLoser" : false
 }

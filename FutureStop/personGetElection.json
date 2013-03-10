@@ -2,4 +2,7 @@
     "uniqueId" : "1"
     "isBoarded" : true
     "isLoser" : false
+    "election" : {
+        "result" : true 
+    }
 }
