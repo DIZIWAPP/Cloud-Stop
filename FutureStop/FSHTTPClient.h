@@ -16,10 +16,11 @@ typedef void (^FSFailureBlock)(NSError *error);
 + (FSHTTPClient *)sharedHTTPClient;
 
 - (void)fetchPersonInfoWithUniqueId:(NSString *)uniqueId
-					   successBlock:(void (^)(FSPerson *))successBlock
+					   successBlock:(void (^)(FSPerson *person))successBlock
 					   failureBlock:(FSFailureBlock)failureBlock;
 
 - (void)createPersonWithUniqueId:(NSString *)uniqueId
+					etaInSeconds:(NSNumber *)etaInSeconds
 					successBlock:(void (^)(FSPerson *))successBlock
 					failureBlock:(FSFailureBlock)failureBlock;
 

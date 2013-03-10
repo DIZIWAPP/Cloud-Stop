@@ -8,7 +8,7 @@
 
 #import "FSHTTPClient.h"
 
-NSString * const kFSBaseURL = @"http://something.mutualmobile.com";
+NSString * const kFSBaseURL = @"http://futurestop.heroku.com/api";
 
 @implementation FSHTTPClient
 
@@ -85,12 +85,14 @@ NSString * const kFSBaseURL = @"http://something.mutualmobile.com";
 }
 
 - (void)createPersonWithUniqueId:(NSString *)uniqueId
+					etaInSeconds:(NSNumber *)etaInSeconds
 					successBlock:(void (^)(FSPerson *))successBlock
 					failureBlock:(FSFailureBlock)failureBlock {
 	
-	NSDictionary *body = @{@"uniqueId" : uniqueId};
+	NSString *path = [@"/person" stringByAppendingPathComponent:uniqueId];
+	NSDictionary *body = @{@"eta" : etaInSeconds};
 	
-	[self sendPOSTToPath:@"/fakepersonpath"
+	[self sendPOSTToPath:path
 				withBody:body
 			successBlock:successBlock
 			failureBlock:failureBlock];

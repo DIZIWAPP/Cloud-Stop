@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSString *uniqueId;
 @property (nonatomic, strong) FSElection *election;
-@property (nonatomic, strong) FSVehicle *vehicle;
+@property (nonatomic, assign) BOOL isBoarded;
+@property (nonatomic, assign) BOOL isLoser;
 
 @end
