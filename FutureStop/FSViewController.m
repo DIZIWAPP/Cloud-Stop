@@ -14,16 +14,55 @@
 
 @implementation FSViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self configureETALabel];
+    [self configureETAValueLabel];
+    [self configureCostLabel];
+    [self configureCostValueLabel];
+    [self configureDestinationLabel];
+    [self configureDestinationValueLabel];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Styles
+
+- (void)configureETALabel {
+    
+}
+
+- (void)configureETAValueLabel {
+    
+}
+
+- (void)configureCostLabel {
+    
+}
+
+- (void)configureCostValueLabel {
+    
+}
+
+- (void)configureDestinationLabel {
+    
+}
+
+- (void)configureDestinationValueLabel {
+    
+}
+
+#pragma mark - Accessors 
+
+- (void)setETA:(NSString*)eta {
+    self.etaLabel.text = eta;
+}
+
+- (void)setCost:(NSString*)cost {
+    self.costLabel.text = cost;
+}
+
+- (void)setDestination:(NSString*)destination {
+    self.destinationLabel.text = destination;
 }
 
 @end
