@@ -12,8 +12,8 @@ NSString * const kFSBaseURL = @"http://something.mutualmobile.com";
 
 @implementation FSHTTPClient
 
-+ (FSHTTPClient *)sharedHTTPClient
-{
++ (FSHTTPClient *)sharedHTTPClient {
+	
 	static dispatch_once_t onceToken;
 	static FSHTTPClient *__sharedInstance;
 	

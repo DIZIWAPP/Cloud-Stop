@@ -1,16 +1,16 @@
 //
-//  FSHTTPClient.h
+//  FSPerson.h
 //  FutureStop
 //
 //  Created by Chris Gibbs on 3/9/13.
 //  Copyright (c) 2013 Mutual Mobile SXSW Creatathon. All rights reserved.
 //
 
-#import <AFNetworking.h>
-#import "FSPerson.h"
+#import <Foundation/Foundation.h>
 
-@interface FSHTTPClient : AFHTTPClient
+@interface FSPerson : NSObject
 
-+ (FSHTTPClient *)sharedHTTPClient;
+@property (nonatomic, strong) NSString *uniqueId;
+
 
 @end

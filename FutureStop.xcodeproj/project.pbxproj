@@ -47,6 +47,7 @@
 		C64C6FA616EAE6A900CAD6C7 /* FutureStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C64C6FA516EAE6A900CAD6C7 /* FutureStopTests.m */; };
 		C6C0D03616EBFE2D00165C0C /* FSHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D03516EBFE2D00165C0C /* FSHTTPClient.m */; };
 		C6C0D03916EC004700165C0C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C0D03816EC004700165C0C /* SystemConfiguration.framework */; };
+		C6C0D03D16EC086600165C0C /* FSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D03C16EC086600165C0C /* FSPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		C6C0D03416EBFE2D00165C0C /* FSHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSHTTPClient.h; sourceTree = "<group>"; };
 		C6C0D03516EBFE2D00165C0C /* FSHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSHTTPClient.m; sourceTree = "<group>"; };
 		C6C0D03816EC004700165C0C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C6C0D03B16EC086600165C0C /* FSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPerson.h; sourceTree = "<group>"; };
+		C6C0D03C16EC086600165C0C /* FSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,7 @@
 		C64C6F7716EAE6A900CAD6C7 /* FutureStop */ = {
 			isa = PBXGroup;
 			children = (
+				C6C0D03A16EC085500165C0C /* Model */,
 				C6C0D03316EBFDAF00165C0C /* Communication */,
 				C64C6F8016EAE6A900CAD6C7 /* FSAppDelegate.h */,
 				C64C6F8116EAE6A900CAD6C7 /* FSAppDelegate.m */,
@@ -259,6 +263,15 @@
 				C6C0D03516EBFE2D00165C0C /* FSHTTPClient.m */,
 			);
 			name = Communication;
+			sourceTree = "<group>";
+		};
+		C6C0D03A16EC085500165C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0D03B16EC086600165C0C /* FSPerson.h */,
+				C6C0D03C16EC086600165C0C /* FSPerson.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +410,7 @@
 				C64C6F8B16EAE6A900CAD6C7 /* FSViewController.m in Sources */,
 				885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */,
 				C6C0D03616EBFE2D00165C0C /* FSHTTPClient.m in Sources */,
+				C6C0D03D16EC086600165C0C /* FSPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
