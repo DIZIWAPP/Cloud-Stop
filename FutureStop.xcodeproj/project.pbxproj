@@ -45,6 +45,8 @@
 		C64C6F9B16EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6FA316EAE6A900CAD6C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C64C6FA116EAE6A900CAD6C7 /* InfoPlist.strings */; };
 		C64C6FA616EAE6A900CAD6C7 /* FutureStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C64C6FA516EAE6A900CAD6C7 /* FutureStopTests.m */; };
+		C6912CB216EC12D10047CBA9 /* FSElection.m in Sources */ = {isa = PBXBuildFile; fileRef = C6912CB116EC12D10047CBA9 /* FSElection.m */; };
+		C6912CB516EC12DC0047CBA9 /* FSVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = C6912CB416EC12DC0047CBA9 /* FSVehicle.m */; };
 		C6C0D03616EBFE2D00165C0C /* FSHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D03516EBFE2D00165C0C /* FSHTTPClient.m */; };
 		C6C0D03916EC004700165C0C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C0D03816EC004700165C0C /* SystemConfiguration.framework */; };
 		C6C0D03D16EC086600165C0C /* FSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D03C16EC086600165C0C /* FSPerson.m */; };
@@ -106,6 +108,10 @@
 		C64C6FA216EAE6A900CAD6C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C64C6FA416EAE6A900CAD6C7 /* FutureStopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FutureStopTests.h; sourceTree = "<group>"; };
 		C64C6FA516EAE6A900CAD6C7 /* FutureStopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FutureStopTests.m; sourceTree = "<group>"; };
+		C6912CB016EC12D10047CBA9 /* FSElection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSElection.h; sourceTree = "<group>"; };
+		C6912CB116EC12D10047CBA9 /* FSElection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSElection.m; sourceTree = "<group>"; };
+		C6912CB316EC12DC0047CBA9 /* FSVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSVehicle.h; sourceTree = "<group>"; };
+		C6912CB416EC12DC0047CBA9 /* FSVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSVehicle.m; sourceTree = "<group>"; };
 		C6C0D03416EBFE2D00165C0C /* FSHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSHTTPClient.h; sourceTree = "<group>"; };
 		C6C0D03516EBFE2D00165C0C /* FSHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSHTTPClient.m; sourceTree = "<group>"; };
 		C6C0D03816EC004700165C0C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -270,6 +276,10 @@
 			children = (
 				C6C0D03B16EC086600165C0C /* FSPerson.h */,
 				C6C0D03C16EC086600165C0C /* FSPerson.m */,
+				C6912CB016EC12D10047CBA9 /* FSElection.h */,
+				C6912CB116EC12D10047CBA9 /* FSElection.m */,
+				C6912CB316EC12DC0047CBA9 /* FSVehicle.h */,
+				C6912CB416EC12DC0047CBA9 /* FSVehicle.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -411,6 +421,8 @@
 				885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */,
 				C6C0D03616EBFE2D00165C0C /* FSHTTPClient.m in Sources */,
 				C6C0D03D16EC086600165C0C /* FSPerson.m in Sources */,
+				C6912CB216EC12D10047CBA9 /* FSElection.m in Sources */,
+				C6912CB516EC12DC0047CBA9 /* FSVehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

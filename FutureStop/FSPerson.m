@@ -13,9 +13,7 @@
 - (NSString *)uniqueId {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated"
-	
 	NSString *identifier = [[UIDevice currentDevice] uniqueIdentifier];
-	
 #pragma clang diagnostic pop
 	return identifier;
 }

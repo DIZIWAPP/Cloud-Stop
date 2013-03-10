@@ -9,8 +9,20 @@
 #import <AFNetworking.h>
 #import "FSPerson.h"
 
+typedef void (^FSFailureBlock)(NSError *error);
+
 @interface FSHTTPClient : AFHTTPClient
 
 + (FSHTTPClient *)sharedHTTPClient;
+
+- (void)fetchPersonInfoWithUniqueId:(NSString *)uniqueId
+					   successBlock:(void (^)(FSPerson *))successBlock
+					   failureBlock:(FSFailureBlock)failureBlock;
+
+- (void)createPersonWithUniqueId:(NSString *)uniqueId
+					successBlock:(void (^)(FSPerson *))successBlock
+					failureBlock:(FSFailureBlock)failureBlock;
+
+
 
 @end

@@ -6,11 +6,13 @@
 //  Copyright (c) 2013 Mutual Mobile SXSW Creatathon. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@class FSElection;
+@class FSVehicle;
 
 @interface FSPerson : NSObject
 
 @property (nonatomic, strong) NSString *uniqueId;
-
+@property (nonatomic, strong) FSElection *eleciton;
+@property (nonatomic, strong) FSVehicle *vehicle;
 
 @end
