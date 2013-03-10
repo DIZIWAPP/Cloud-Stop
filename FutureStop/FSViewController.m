@@ -8,9 +8,7 @@
 
 #import "FSViewController.h"
 
-@interface FSViewController ()
-
-@end
+const NSTimeInterval kPollingTimerInterval = 3.0f;
 
 @implementation FSViewController
 
@@ -23,6 +21,8 @@
     [self configureCostValueLabel];
     [self configureDestinationLabel];
     [self configureDestinationValueLabel];
+    
+    [self configurePollingTimer];
 }
 
 #pragma mark - Styles
@@ -51,7 +51,23 @@
     
 }
 
-#pragma mark - Accessors 
+#pragma mark - Polling 
+
+- (void)configurePollingTimer {
+    [self.pollingTimer invalidate];
+    NSTimer *pollingTimer = [NSTimer scheduledTimerWithTimeInterval:kPollingTimerInterval
+                                                             target:self
+                                                           selector:@selector(timerFired:)
+                                                           userInfo:nil
+                                                            repeats:YES];
+    self.pollingTimer = pollingTimer;
+}
+
+- (void)timerFired:(NSTimer*)timer {
+ 
+}
+
+#pragma mark - Accessors/Mutators
 
 - (void)setETA:(NSString*)eta {
     self.etaLabel.text = eta;
