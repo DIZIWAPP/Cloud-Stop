@@ -9,6 +9,11 @@
 #import "FSNewRiderAlertView.h"
 #import <QuartzCore/QuartzCore.h>
 
+@interface FSNewRiderAlertView ()
+@property (nonatomic, strong) UIButton *noButton;
+@property (nonatomic, strong) UIButton *yesButton;
+@end
+
 @implementation FSNewRiderAlertView
 
 - (id)initWithFrame:(CGRect)frame
@@ -23,8 +28,32 @@
         self.layer.shadowRadius = 15.f;
         self.layer.shadowOffset = CGSizeMake(0.f, 1.f);
         self.layer.shadowOpacity = 0.45f;
+        
+        self.noButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.yesButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        [self configureButtons];
+        
+        [self addSubview:self.noButton];
+        [self addSubview:self.yesButton];
     }
     return self;
+}
+
+- (void)configureButtons{
+    self.noButton.frame = CGRectMake(20.f, 80.f, 100.f, 44.f);
+    self.yesButton.frame = CGRectMake(CGRectGetMaxX(self.noButton.frame) + 15.f,
+                                 self.noButton.frame.origin.y,
+                                 100.f, 44.f);
+    
+    [self.noButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.yesButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    [self.noButton setTitle:@"No" forState:UIControlStateNormal];
+    [self.yesButton setTitle:@"Yes" forState:UIControlStateNormal];
+    
+    self.noButton.backgroundColor = [UIColor orangeColor];
+    self.yesButton.backgroundColor = [UIColor whiteColor];
 }
 
 
@@ -43,8 +72,6 @@
     UIBezierPath* alertRectanglePath = [UIBezierPath bezierPathWithRoundedRect: alertRectangleRect cornerRadius: self.layer.cornerRadius];
     [alertBackgroundColor setFill];
     [alertRectanglePath fill];
-    
-    
 
 }
 
