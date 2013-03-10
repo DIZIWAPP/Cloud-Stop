@@ -7,4 +7,5 @@ pod 'AFNetworking', '~> 1.1.0'
 pod 'AFHTTPRequestOperationLogger', '~> 0.10.0'
 pod 'MagicalRecord', '~> 2.1'
 pod 'Parse', '~> 1.1.32'
+inhibit_all_warnings!
 
